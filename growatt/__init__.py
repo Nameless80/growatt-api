@@ -597,7 +597,7 @@ class Growatt:
 	                "action":"mixSet",    # Parameter set Action
 	                "serialNum":mixSn,    # Parameter Serial Number of the inverter
 	                "type":"pv_on_off",    # Parameter set Command Type
-	                "param1":0001    # Parameter 1
+	                "param1":1    # Parameter 1
                 }
 
         res = self.session.post(f"{self.BASE_URL}/tcpSet.do", data=data)
@@ -629,7 +629,7 @@ class Growatt:
 	                "action":"mixSet",    # Parameter set Action
 	                "serialNum":mixSn,    # Parameter Serial Number of the inverter
 	                "type":"pv_on_off",    # Parameter set Command Type
-	                "param1":0000    # Parameter 1
+	                "param1":0    # Parameter 1
                 }
 
         res = self.session.post(f"{self.BASE_URL}/tcpSet.do", data=data)
